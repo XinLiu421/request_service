@@ -1,0 +1,27 @@
+# 开发说明
+```
+pip install -r requirements.txt
+python app.py
+
+测试数据在test目录下，使用postman或python脚本等测试
+```
+
+# 部署说明
+```
+pip install --user -r requirements.txt
+
+gunicorn --reload -D -w 4 -c test_config.py --log-config logging.conf model_server:app
+```
+
+# Troubleshooting
+- 安装pandas报错
+
+	For yum (CentOS, RHEL...):
+
+	```
+	sudo yum install python-devel   # for python2.x installs
+	sudo yum install python34-devel   # for python3.4 installs
+	```
+- Double requirement given
+
+	`pip install your_package_name --no-build-isolation`
