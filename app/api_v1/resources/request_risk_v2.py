@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 class RequestRiskV2(Resource):
     def __init__(self):
         self.request_json = request.get_json()
+        super(RequestRiskV2, self).__init__()
 
     def test(self):
         return 'success'
