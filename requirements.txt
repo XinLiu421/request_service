@@ -5,6 +5,6 @@ pandas==0.23.4
 scikit_learn==0.20.0
 scipy==1.1.0
 xgboost==0.80
-PyYAML==5.1
+PyYAML==5.4
 marshmallow==3.0.0rc5
 gunicorn==19.9.0
